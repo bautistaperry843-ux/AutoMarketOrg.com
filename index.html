@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoMarket - Compra y Venta de Autos Usados</title>
+    <meta name="description" content="Página oficial de compra y venta de autos usados y seminuevos. Encuentra las mejores ofertas y precios.">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Menú principal de la tienda AutoMarket</h1>
+            <small style="cursor: pointer;" onclick="navigator.clipboard.writeText('Av. Bicentenario 1200'); alert('¡Dirección copiada!');">
+                📍 Sucursal: Av. Bicentenario 1200 (Haz click para copiar)
+            </small>
+        </div>
+        <a href="inicio de sesion.html" class="btn-header">Iniciar Sesión 🔑</a>
+    </header>
+
+    <nav>
+        <details class="nav-dropdown">
+            <summary>Catálogo de Vehículos ▾</summary>
+            <div class="dropdown-content">
+                <a href="catalogo.html">Ver Todos los Autos</a>
+                <a href="detalle de autos.html">Ver Oferta Destacada</a>
+            </div>
+        </details>
+        <a href="index.html">Ir al Inicio</a>
+        <a href="vender auto.html">Vender mi Auto</a>
+        <a href="curso.html">Curso Mecánica</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="sobre nosotros.html">Acerca de Nosotros</a>
+        <a href="preguntas frecuentes.html">Preguntas Frecuentes</a>
+    </nav>
+
+    <main>
+        <section class="hero-section">
+            <img src="foto de auto.jfif" alt="Logotipo oficial de AutoMarket">
+            <h2>AutoMarket Salta</h2>
+            
+            <details class="user-login">
+                <summary>
+                    <strong>Invitado</strong><br>Haz click para ingresar tu usuario
+                </summary>
+                <div class="login-box">
+                    <p>Introduce tu nombre:</p>
+                    <input type="text" placeholder="Tu nombre de comprador"><br><br>
+                    
+                    <details>
+                        <summary class="btn-sub">Ingresar</summary>
+                        <p class="success-msg"><strong>Usuario ingresado correctamente</strong></p>
+                    </details>
+                </div>
+            </details>
+
+            <p class="whatsapp-box">
+                <strong>Grupo de WhatsApp Oficial</strong><br>
+                <a href="https://whatsapp.com" target="_blank">Únete a nuestra comunidad de compradores</a>
+            </p>
+        </section>
+
+        <section class="info-section">
+            <h2>Bienvenido(a) a la web oficial de AutoMarket</h2>
+            <p>Bienvenido a nuestra plataforma. Para comenzar a ver los vehículos disponibles, por favor selecciona una opción del menú de arriba. Ten en cuenta que la reserva de cada auto requiere una seña previa para congelar el precio.</p>
+
+            <div class="grid-container">
+                <div class="card">
+                    <h3>Últimas Ventas Realizadas</h3>
+                    <p>Revisá los vehículos entregados recientemente en nuestra sucursal.</p>
+                </div>
+                <div class="card">
+                    <h3>Autos Agregados Recientemente</h3>
+                    <p>Ingresos semanales de unidades seleccionadas e inspeccionadas.</p>
+                </div>
+            </div>
+
+            <div class="notice-card">
+                <p><strong>Autos Vendidos este Mes: 45%</strong></p>
+            </div>
+
+            <div class="support-box">
+                <h3>Atención y Soporte</h3>
+                <p>¿Necesitas hacer preguntas sobre un auto antes de comprar? ¿Quieres revisar la documentación del vehículo? Escribe a nuestro equipo por mensaje o visita nuestra sucursal.</p>
+                <p><a href="contacto.html" class="btn">Enviar mensaje al Soporte de Atención al Cliente</a></p>
+            </div>
+
+            <div class="terms-box">
+                <p><strong>Importante:</strong> AutoMarket es una plataforma independiente de compra y venta de autos usados y no representa formalmente a ninguna marca ni concesionaria oficial.</p>
+                <p><strong>CONTACTO:</strong> Si tienes alguna duda o consulta, no dudes en ponerte en contacto con nosotros. Puedes enviarnos un correo electrónico a automarket.contacto@gmail.com o mandarnos un mensaje al WhatsApp Oficial.</p>
+                <p><strong>Política de Reserva y Cancelación:</strong> Todas las señas de reserva se mantienen durante 5 días hábiles. Si la compra no se concreta por motivos ajenos a AutoMarket, el monto podrá ser utilizado para la compra de otro vehículo en stock.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>BAUTISTA SALTO PERRY</strong> — 2026</p>
+    </footer>
+
+</body>
+</html>

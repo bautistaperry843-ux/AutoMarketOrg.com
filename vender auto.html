@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vender - AutoMarket</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Publicá tu auto en AutoMarket</h1>
+            <small style="cursor: pointer;" onclick="navigator.clipboard.writeText('Av. Bicentenario 1200'); alert('¡Dirección copiada!');">
+                📍 Sucursal: Av. Bicentenario 1200 (Haz click para copiar)
+            </small>
+        </div>
+        <a href="registro.html" class="btn-header">Registrate 🔑</a>
+    </header>
+
+    <nav>
+        <details class="nav-dropdown">
+            <summary>Catálogo de Vehículos ▾</summary>
+            <div class="dropdown-content">
+                <a href="catalogo.html">Ver Todos los Autos</a>
+                <a href="detalle de autos.html">Ver Oferta Destacada</a>
+            </div>
+        </details>
+        <a href="index.html">Ir al Inicio</a>
+        <a href="vender auto.html">Vender mi Auto</a>
+        <a href="curso.html">Curso Mecánica</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="sobre nosotros.html">Acerca de Nosotros</a>
+        <a href="preguntas frecuentes.html">Preguntas Frecuentes</a>
+    </nav>
+
+    <main>
+        <section class="hero-section">
+            <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=400" alt="Venta de autos">
+            <h2>Vender tu auto</h2>
+        </section>
+
+        <section class="support-box" style="max-width: 500px; margin: 0 auto;">
+            <form>
+                <p><strong>Nombre:</strong><br>
+                <input type="text" style="width: 100%;"></p>
+
+                <p><strong>Email:</strong><br>
+                <input type="email" style="width: 100%;"></p>
+
+                <p><strong>Datos del auto:</strong><br>
+                <textarea placeholder="Marca, modelo, año, precio y descripción..." rows="5" style="width: 100%;"></textarea></p>
+
+                <details class="user-login">
+                    <summary class="btn-sub">Publicar</summary>
+                    <p class="success-msg"><strong>Auto enviado para revisión correctamente</strong></p>
+                </details>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>BAUTISTA SALTO PERRY</strong> — 2026</p>
+    </footer>
+
+</body>
+</html>

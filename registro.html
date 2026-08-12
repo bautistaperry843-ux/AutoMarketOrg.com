@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - AutoMarket</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Registro de Usuario - AutoMarket</h1>
+            <small style="cursor: pointer;" onclick="navigator.clipboard.writeText('Av. Bicentenario 1200'); alert('¡Dirección copiada!');">
+                📍 Sucursal: Av. Bicentenario 1200 (Haz click para copiar)
+            </small>
+        </div>
+        <a href="inicio de sesion.html" class="btn-header">Iniciá sesión 🔑</a>
+    </header>
+
+    <nav>
+        <details class="nav-dropdown">
+            <summary>Catálogo de Vehículos ▾</summary>
+            <div class="dropdown-content">
+                <a href="catalogo.html">Ver Todos los Autos</a>
+                <a href="detalle de autos.html">Ver Oferta Destacada</a>
+            </div>
+        </details>
+        <a href="index.html">Ir al Inicio</a>
+        <a href="vender auto.html">Vender mi Auto</a>
+        <a href="curso.html">Curso Mecánica</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="sobre nosotros.html">Acerca de Nosotros</a>
+        <a href="preguntas frecuentes.html">Preguntas Frecuentes</a>
+    </nav>
+
+    <main>
+        <section class="hero-section">
+            <img src="foto de auto.jfif" alt="Logotipo oficial de AutoMarket">
+            <h2>AutoMarket Salta</h2>
+        </section>
+
+        <section class="support-box" style="max-width: 400px; margin: 0 auto;">
+            <h2>Registrarse</h2>
+            <form>
+                <p>Introduce tu nombre:<br>
+                <input type="text" placeholder="Nombre" style="width: 100%;"></p>
+                
+                <p>Introduce tu email:<br>
+                <input type="email" placeholder="Email" style="width: 100%;"></p>
+
+                <p>Introduce tu contraseña:<br>
+                <input type="password" placeholder="Contraseña" style="width: 100%;"></p>
+                
+                <details class="user-login">
+                    <summary class="btn-sub">Registrar</summary>
+                    <p class="success-msg"><strong>Usuario registrado correctamente</strong></p>
+                </details>
+            </form>
+            <p style="margin-top: 15px;">¿Ya tenés una cuenta? <a href="inicio de sesion.html">Iniciá sesión</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>BAUTISTA SALTO PERRY</strong> — 2026</p>
+    </footer>
+
+</body>
+</html>
