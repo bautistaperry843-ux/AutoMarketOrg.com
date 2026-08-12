@@ -1,0 +1,249 @@
+/* ===================================================
+   1. CONFIGURACIÓN GENERAL Y FUENTES
+   =================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fondo en formato RGB (Requisito: Fondo en RGB) */
+body {
+    background-color: rgb(245, 247, 250);
+    color: #333333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    max-width: 1100px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* ===================================================
+   2. ENCABEZADO (HEADER)
+   =================================================== */
+header {
+    background-color: #ffffff;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #0f172a;
+}
+
+.btn-header {
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-header:hover {
+    background-color: #1d4ed8;
+}
+
+/* ===================================================
+   3. MENÚ DE NAVEGACIÓN (NAV)
+   Requisito: Menú en HEX
+   =================================================== */
+nav {
+    background-color: #1e293b; /* Color Hexadecimal */
+    padding: 12px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Dropdown del menú */
+.nav-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-dropdown summary {
+    color: #38bdf8;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    z-index: 100;
+    min-width: 180px;
+}
+
+.dropdown-content a {
+    color: #1e293b;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.dropdown-content a:hover {
+    color: #2563eb;
+}
+
+/* ===================================================
+   4. ESTILIZADO DE IMÁGENES
+   =================================================== */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;                  /* Bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    object-fit: cover;                    /* Evita distorsión */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: translateY(-4px) scale(1.02); /* Efecto hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* ===================================================
+   5. TARJETAS Y CONTENEDORES (CARDS & GRID)
+   =================================================== */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+
+.hero-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero-section img {
+    max-width: 400px;
+    margin-bottom: 15px;
+}
+
+.price {
+    color: #16a34a;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #0f172a;
+    color: #ffffff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #334155;
+}
+
+/* ===================================================
+   6. FORMULARIOS Y CUADROS DE SOPORTE
+   =================================================== */
+.support-box {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 20px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 0.95rem;
+}
+
+/* Cajas desplegables de módulos / FAQ */
+.terms-box {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.user-login summary.btn-sub {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    list-style: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.success-msg {
+    color: #16a34a;
+    margin-top: 10px;
+}
+
+/* ===================================================
+   7. PIE DE PÁGINA (FOOTER)
+   Requisito: Pie en HSL
+   =================================================== */
+footer {
+    background-color: hsl(215, 28%, 17%); /* Color HSL */
+    color: hsl(0, 0%, 100%);               /* Texto blanco en HSL */
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
